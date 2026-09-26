@@ -1,0 +1,20 @@
+# dependencies
+**/node_modules/
+
+# env files
+.env
+.env.*
+
+# build output
+build/
+dist/
+dist-ssr/
+coverage/
+
+# system files
+.DS_Store
+
+.vercel
+.env*
+
+test-ai.js
