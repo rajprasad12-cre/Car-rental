@@ -4,6 +4,7 @@
     "server": "npm --prefix server run server"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "razorpay": "^2.9.8"
   }
 }
