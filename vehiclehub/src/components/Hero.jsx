@@ -53,9 +53,9 @@ const Hero = () => {
           animate={{ scale: 1, opacity: 1, y: 0}}
           transition={{ duration: 0.6, delay: 0.4 }}
 
-          onSubmit={handleSearch} className='relative z-10 flex w-full max-w-4xl flex-col items-start justify-between gap-4 rounded-2xl border border-white/20 bg-white/95 p-4 text-gray-900 shadow-[0_24px_70px_rgba(0,0,0,0.35)] backdrop-blur-md md:flex-row md:items-center md:rounded-full md:p-3 md:pl-7'>
+          onSubmit={handleSearch} className='relative z-10 flex w-full max-w-4xl flex-col items-start justify-between gap-4 rounded-2xl border border-white/20 bg-white/95 p-4 text-gray-900 shadow-[0_24px_70px_rgba(0,0,0,0.35)] backdrop-blur-md md:w-fit md:flex-row md:items-center md:rounded-full md:p-3 md:pl-7'>
 
-            <div className='flex w-full flex-col items-start gap-4 md:flex-row md:items-center md:gap-6'>
+            <div className='flex w-full flex-col items-start gap-4 md:w-auto md:flex-row md:items-center md:gap-6'>
                 <div className='flex flex-col  items-start gap-2'>
                     <select required value={pickupLocation} onChange={(e)=>setPickupLocation(e.target.value)} className='w-full rounded-lg border border-borderColor bg-white px-4 py-2 text-gray-500 outline-none md:w-auto'>
                         <option value="">Pickup Location</option>
@@ -82,7 +82,7 @@ const Hero = () => {
             </div>
         </motion.form>
 
-        <div className='relative mt-2 flex w-full max-w-5xl items-center justify-center'>
+        <div className='relative -mt-8 flex w-full max-w-5xl items-center justify-center md:-mt-10'>
           <div className='absolute bottom-4 h-10 w-3/4 rounded-[50%] bg-black/60 blur-2xl' />
           <motion.img 
             initial={{ y: 100, opacity: 0 }}
